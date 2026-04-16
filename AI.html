@@ -15,34 +15,33 @@
             --blue: #a2d2ff;
             --text: #5c4a4a;
         }
-
-        body {
-            margin: 0;
-            background-color: var(--pink);
-            background-image: radial-gradient(var(--cream) 2px, transparent 2px);
-            background-size: 40px 40px; 
-            font-family: 'Quicksand', sans-serif;
-            color: var(--text);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            overflow: hidden;
-        }
+body {
+    margin: 0;
+    background-color: var(--pink);
+    background-image: radial-gradient(var(--cream) 2px, transparent 2px);
+    background-size: 40px 40px; 
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Delete the overflow: hidden; line that was here! */
+}
 
         #game-container {
-            position: relative;
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(15px);
-            padding: 30px;
-            border-radius: 50px;
-            border: 8px solid white;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
-            text-align: center;
-            width: 90%;
-            max-width: 650px;
-        }
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 50px;
+    border: 8px solid white;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 450px; /* Change this from 650px to 450px */
+}
 
         h1 {
             font-family: 'Playfair Display', serif;
